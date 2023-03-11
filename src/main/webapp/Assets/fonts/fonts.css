@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('fonts/Kanit.ttf');
+}
+
+@font-face {
+    font-family: 'Mukta';
+    src: url('fonts/Mukta.ttf');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito.ttf');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('fonts/Ubuntu.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fonts/Quicksand.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins.ttf');
+}
