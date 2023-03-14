@@ -2,6 +2,7 @@
     pageEncoding="ISO-8859-1"%>
     <%@ page import="java.sql.*" %>
     <%@ page import="java.util.Random" %>
+<%@ page import="java.util.ArrayList" %>
     <%
   //database connection
 	//database connection
@@ -119,23 +120,38 @@
 					if(request.getParameter("ticket") != null){
 						//retrieving data from the form
 						String Destination =request.getParameter("destination");
-						
-						Random random = new Random();
-						int seatNumber = random.nextInt(4) ;
-						
-						
 							
 						Statement ticket_statement=connection.createStatement();
-						ResultSet result=ticket_statement.executeQuery("SELECT  bus_number,departure,destination,fare FROM route WHERE LOWER(destination)	LIKE '%"+Destination+"%' AND status='Loading'" ); 
+						ResultSet result=ticket_statement.executeQuery("SELECT  bus_number,departure,destination,fare,seats FROM route WHERE LOWER(destination)	LIKE '%"+Destination+"%' AND status='Loading'" ); 
 						String name="";
 						String from="";
 						String to="";
 						String fare="";
+						int totalSeats
+						
 						if(result.next()){
 							name = result.getString("bus_number");
 							from = result.getString("departure");
 							to = result.getString("destination");
-							fare = result.getString("fare");							    
+							fare = result.getString("fare");
+					        int totalSeats = result.getInt("seats");
+					        
+					     // create a list of seat numbers from 1 to the total number of seats
+					        List<Integer> seatNumbers = new ArrayList<>();
+					        for(int i=1; i<=totalSeats; i++){
+					            seatNumbers.add(i);
+					        }
+
+					        // shuffle the list of seat numbers to randomize the order
+					        Collections.shuffle(seatNumbers);
+
+					        // sort the shuffled list of seat numbers in ascending order
+					        Collections.sort(seatNumbers);
+
+					        
+					        // assign the first available seat number to the passenger and remove it from the list of available seat numbers
+					        int seatNumber = seatNumbers.get(0);
+					        seatNumbers.remove(0);
 						}else{
 							 %>
 			               		<script>

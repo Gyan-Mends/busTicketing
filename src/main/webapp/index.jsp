@@ -23,16 +23,16 @@
     <link rel="stylesheet" href="Assets/fonts/fonts.css">
     <link rel="stylesheet" href="Assets/fontawesome/css/all.css">
 </head>
-<body style="font-family: poppins;" class="dark:bg-gray-800 ">
-    <div class="h-screen flex items-center justify-center">
-        <div class="h-[300px] w-[300px] dark:bg-gray-600 rounded-md  pt-4">
+<body style="font-family: poppins;" class="bg-gray-800 ">
+    <div class="h-screen flex items-center justify-center ">
+        <div class="h-[300px] w-[300px] dark:bg-gray-600 border border-gray-600 rounded-md  pt-4">
             <h3 class="text-white text-xl mb-7 text-center">ADMIN LOGIN</h3><hr class="-mt-5">
             <form class="text-center mt-4" action="index.jsp" method="post">
                 <label class="text-white -ml-40" for="">Email</label><br>
-                <input class="h-8 rounded-sm outline-none bg-blue-50" type="email" name="email"><br><br>
+                <input class="h-8 rounded-sm outline-none bg-blue-50 pl-2" type="email" name="email"><br><br>
 
                 <label class="text-white -ml-[120px]" for="">Password</label><br>
-                <input class="h-8 rounded-sm outline-none bg-blue-50" type="password" name="password"><br>
+                <input class="h-8 rounded-sm outline-none bg-blue-50 pl-2" type="password" name="password"><br>
 
                 <div class="text-right w-60">
                     <a class="text-sm text-right text-red-400" href="">Forgot password</a><br><br>

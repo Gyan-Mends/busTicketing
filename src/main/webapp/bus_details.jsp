@@ -108,13 +108,13 @@
 				<div class="text-center text-xl -mt-6 pb-4 text-blue-200"><h2>Bus Registration</h2></div><hr>
 				<form action="bus_details.jsp" method="post" class="pt-5 flex-col items-center justify-center pl-20 ">
 					<label class="text-white">Bus No</label><br>
-					<input  class="h-9 rounded-md outline-none bg-blue-50" type="text" name="number" required><br><br>
+					<input  class="h-9 rounded-md outline-none bg-blue-50 pl-2" type="text" name="number" required><br><br>
 					
 					<label class="text-white">Bus Type</label><br>
-					<input class="h-9 rounded-md outline-none bg-blue-50" type="text" name="type" required><br><br>
+					<input class="h-9 rounded-md outline-none bg-blue-50 pl-2" type="text" name="type" required><br><br>
 					
 					<label class="text-white">Bus Seats</label><br>
-					<input class="h-9 rounded-md outline-none bg-blue-50" type="text" name="seats" required><br><br>
+					<input class="h-9 rounded-md outline-none bg-blue-50 pl-2" type="text" name="seats" required><br><br>
 					
 					<div class="text-center -ml-20"><input type="submit" name="submit" value="ADD" class=" rounded-md text-white h-8 w-20 bg-blue-600" ></div>
 				</form>
@@ -132,13 +132,13 @@
 				<div class="text-center text-xl -mt-6 pb-4 text-blue-200"><h2>Bus Registration</h2></div><hr>
 				<form action="bus_details.jsp" method="post" class="pt-5 flex-col items-center justify-center pl-20 ">
 					<label class="text-white">Bus No</label><br>
-					<input  class="h-9 rounded-md outline-none bg-blue-50" type="text" name="number" required><br><br>
+					<input  class="h-9 rounded-md outline-none bg-blue-50 pl-2" type="text" name="number" requir	ed><br><br>
 					
 					<label class="text-white">Bus Type</label><br>
-					<input class="h-9 rounded-md outline-none bg-blue-50" type="text" name="type" required><br><br>
+					<input class="h-9 rounded-md outline-none bg-blue-50 pl-2" type="text" name="type" required><br><br>
 					
 					<label class="text-white">Bus Seats</label><br>
-					<input class="h-9 rounded-md outline-none bg-blue-50" type="text" name="seats" required><br><br>
+					<input class="h-9 rounded-md outline-none bg-blue-50 pl-2" type="text" name="seats" required><br><br>
 					
 					<div class="text-center -ml-20"><input type="submit" name="submit" value="ADD" class=" rounded-md text-white h-8 w-20 bg-blue-600" ></div>
 				</form>
